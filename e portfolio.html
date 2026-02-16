@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUADRO PORTFOLIO</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #1e3a8a;
+            color: #ffffff;
+        }
+        .highlight {
+            color: #ff0000;
+        }
+        h1, h2, h3 {
+            color: #ff0000;
+        }
+        .btn {
+            background-color: #ff0000;
+            color: #ffffff;
+        }
+        .btn:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><span class="highlight">QUADRO</span> PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <img src="assets/images/profile.jpg" alt="Profile" class="profile-img">
+            <h1>Welcome to QUADRO PORTFOLIO</h1>
+            <p>Hi, I'm <span class="highlight">VINCENT NYACHACHI</span></p>
+            <p>A passionate web developer and designer</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="assets/images/profile.jpg" alt="Profile" class="about-img">
+                <div class="about-text">
+                    <p><span class="highlight">Name:</span> VINCENT NYACHACI</p>
+                    <p><span class="highlight">Email:</span> montinez@gmail.com</p>
+                    <p><span class="highlight">Phone:</span> +1 (254) 713685979</p>
+                    <p><span class="highlight">Bio:</span> Passionate about creating beautiful and functional web experiences. With expertise in front-end development and UI/UX design, I help businesses establish their online presence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Services I Offer</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <p>Building responsive and modern websites using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="service-card">
+                    <h3>UI/UX Design</h3>
+                    <p>Creating user-friendly interfaces and engaging user experiences.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Responsive Design</h3>
+                    <p>Ensuring your website looks great on all devices and screen sizes.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Frontend Optimization</h3>
+                    <p>Improving performance and speed of your web applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p><span class="highlight">Email:</span> montinez@gmail.com</p>
+                <p><span class="highlight">Phone:</span> +1 (254) 713685979</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="formMessage"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 <span class="highlight">QUADRO</span> PORTFOLIO. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
