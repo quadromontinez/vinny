@@ -353,3 +353,58 @@ bodyStyle.textContent = `
     }
 `;
 document.head.appendChild(bodyStyle);
+
+// Add money color styling - Green for additions, Red for deductions
+const moneyStyle = document.createElement('style');
+moneyStyle.textContent = `
+    .money-addition,
+    .income,
+    .credit,
+    .gain,
+    .profit {
+        color: #22c55e !important;
+        font-weight: 600;
+    }
+    
+    .money-deduction,
+    .expense,
+    .debit,
+    .loss,
+    .charge,
+    .fee {
+        color: #ef4444 !important;
+        font-weight: 600;
+    }
+`;
+document.head.appendChild(moneyStyle);
+
+// Function to automatically color money amounts in transaction lists
+function colorizeMoneyAmounts() {
+    // Find all elements that might contain money values
+    document.querySelectorAll('[class*="amount"], [class*="transaction"], [class*="balance"]').forEach(element => {
+        const text = element.textContent;
+        
+        // Check for positive amounts (additions/income)
+        if (text.match(/^\+|\bincome\b|\bcredit\b|\bgain\b/i)) {
+            element.classList.add('money-addition');
+        }
+        
+        // Check for negative amounts (deductions/expenses)
+        if (text.match(/^-|\bexpense\b|\bdebit\b|\bloss\b|\bfee\b|\bcharge\b/i)) {
+            element.classList.add('money-deduction');
+        }
+    });
+}
+
+// Run on page load
+document.addEventListener('DOMContentLoaded', colorizeMoneyAmounts);
+
+// Also run when content is dynamically added
+const observeMoneyChanges = new MutationObserver(() => {
+    colorizeMoneyAmounts();
+});
+
+observeMoneyChanges.observe(document.body, {
+    childList: true,
+    subtree: true
+});
