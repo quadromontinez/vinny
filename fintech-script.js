@@ -342,3 +342,14 @@ navStyle.textContent = `
     }
 `;
 document.head.appendChild(navStyle);
+
+// Add shiny blue background color to body
+const bodyStyle = document.createElement('style');
+bodyStyle.textContent = `
+    body {
+        background: linear-gradient(135deg, #0066ff 0%, #1e90ff 50%, #00bfff 100%);
+        background-attachment: fixed;
+        min-height: 100vh;
+    }
+`;
+document.head.appendChild(bodyStyle);
