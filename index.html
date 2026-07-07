@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinFlow - Digital Financial Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-wallet"></i>
+                    <span>FinFlow</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#invest">Invest</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="nav-btn">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Complete Digital Financial Platform</h1>
+                <p>Send money, invest, and manage your finances all in one place</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="status-bar"></div>
+                        <div class="app-content">
+                            <div class="balance-card">
+                                <p>Available Balance</p>
+                                <h2>$2,450.50</h2>
+                            </div>
+                            <div class="quick-actions">
+                                <button><i class="fas fa-arrow-right"></i> Send</button>
+                                <button><i class="fas fa-arrow-left"></i> Request</button>
+                                <button><i class="fas fa-plus"></i> Add</button>
+                                <button><i class="fas fa-chart-line"></i> Invest</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Financial Services</h2>
+            <div class="services-grid">
+                <!-- Money Transfer -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-money-bill-transfer"></i>
+                    </div>
+                    <h3>Money Transfer</h3>
+                    <p>Send money instantly to friends and family with minimal fees</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Instant transfers</li>
+                        <li><i class="fas fa-check"></i> Low fees</li>
+                        <li><i class="fas fa-check"></i> 24/7 availability</li>
+                    </ul>
+                </div>
+
+                <!-- Bill Payments -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-receipt"></i>
+                    </div>
+                    <h3>Bill Payments</h3>
+                    <p>Pay utilities, subscriptions, and other bills in seconds</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Auto-pay options</li>
+                        <li><i class="fas fa-check"></i> Payment history</li>
+                        <li><i class="fas fa-check"></i> Reminders</li>
+                    </ul>
+                </div>
+
+                <!-- Airtime & Data -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Airtime & Data</h3>
+                    <p>Top up your mobile phone instantly with any provider</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> All providers</li>
+                        <li><i class="fas fa-check"></i> Best rates</li>
+                        <li><i class="fas fa-check"></i> Quick top-up</li>
+                    </ul>
+                </div>
+
+                <!-- Savings Account -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h3>Savings Account</h3>
+                    <p>Grow your money with competitive interest rates</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 5.5% APY</li>
+                        <li><i class="fas fa-check"></i> No minimum balance</li>
+                        <li><i class="fas fa-check"></i> Monthly interest</li>
+                    </ul>
+                </div>
+
+                <!-- Loans -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Quick Loans</h3>
+                    <p>Get instant loans with flexible repayment terms</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Instant approval</li>
+                        <li><i class="fas fa-check"></i> Easy repayment</li>
+                        <li><i class="fas fa-check"></i> Competitive rates</li>
+                    </ul>
+                </div>
+
+                <!-- Insurance -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Insurance Plans</h3>
+                    <p>Protect yourself and your family with affordable plans</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Health coverage</li>
+                        <li><i class="fas fa-check"></i> Life protection</li>
+                        <li><i class="fas fa-check"></i> Easy claims</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Options Section -->
+    <section class="investment" id="invest">
+        <div class="container">
+            <h2>Investment Opportunities</h2>
+            <p class="section-subtitle">Grow your wealth with our diverse investment options</p>
+            
+            <div class="investment-tabs">
+                <button class="tab-btn active" data-tab="stocks">Stocks</button>
+                <button class="tab-btn" data-tab="bonds">Bonds</button>
+                <button class="tab-btn" data-tab="funds">Mutual Funds</button>
+                <button class="tab-btn" data-tab="crypto">Crypto</button>
+            </div>
+
+            <!-- Stocks Tab -->
+            <div class="tab-content active" id="stocks">
+                <div class="investment-grid">
+                    <div class="investment-card">
+                        <div class="stock-header">
+                            <h4>Tech Giants Fund</h4>
+                            <span class="badge positive">+12.5%</span>
+                        </div>
+                        <p class="description">Invest in leading technology companies</p>
+                        <div class="investment-stats">
+                            <div class="stat">
+                                <label>Min Investment</label>
+                                <span>$100</span>
+                            </div>
+                            <div class="stat">
+                                <label>Avg Return</label>
+                                <span>12.5%</span>
+                            </div>
+                            <div class="stat">
+                                <label>Risk Level</label>
+                                <span>Medium</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary-sm">Invest Now</button>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="stock-header">
+                            <h4>Blue Chip Portfolio</h4>
+                            <span class="badge positive">+8.3%</span>
+                        </div>
+                        <p class="description">Established market leaders with steady returns</p>
+                        <div class="investment-stats">
+                            <div class="stat">
+                                <label>Min Investment</label>
+                                <span>$50</span>
+                            </div>
+                            <div class="stat">
+                                <label>Avg Return</label>
+                                <span>8.3%</span>
+                            </div>
+                            <div class="stat">
+                                <label>Risk Level</label>
+                                <span>Low</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary-sm">Invest Now</button>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="stock-header">
+                            <h4>Growth Accelerator</h4>
+                            <span class="badge positive">+18.7%</span>
+                        </div>
+                        <p class="description">High growth potential emerging companies</p>
+                        <div class="investment-stats">
+                            <div class="stat">
+                                <label>Min Investment</label>
+                                <span>$250</span>
+                            </div>
+                            <div class="stat">
+                                <label>Avg Return</label>
+                                <span>18.7%</span>
+                            </div>
+                            <div class="stat">
+                                <label>Risk Level</label>
+                                <span>High</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary-sm">Invest Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bonds Tab -->
+            <div class="tab-content" id="bonds">
+                <div class="investment-grid">
+                    <div class="investment-card">
+                        <div class="stock-header">
+                            <h4>Government Bonds</h4>
+                            <span class="badge positive">+4.5%</span>
+                        </div>
+                        <p class="description">Safe government-backed securities</p>
+                        <div class="investment-stats">
+                            <div class="stat">
+                                <label>Min Investment</label>
+                                <span>$1000</span>
+                            </div>
+                            <div class="stat">
+                                <label>Avg Return</label>
+                                <span>4.5%</span>
+                            </div>
+                            <div class="stat">
+                                <label>Risk Level</label>
+                                <span>Very Low</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary-sm">Invest Now</button>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="stock-header">
+                            <h4>Corporate Bonds</h4>
+                            <span class="badge positive">+6.2%</span>
+                        </div>
+                        <p class="description">High-grade corporate debt instruments</p>
+                        <div class="investment-stats">
+                            <div class="stat">
+                                <label>Min Investment</label>
+                                <span>$500</span>
+                            </div>
+                            <div class="stat">
+                                <label>Avg Return</label>
+                                <span>6.2%</span>
+                            </div>
+                            <div class="stat">
+                                <label>Risk Level</label>
+                                <span>Low</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary-sm">Invest Now</button>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="stock-header">
+                            <h4>High-Yield Bonds</h4>
+                            <span class="badge positive">+9.8%</span>
+                        </div>
+                        <p class="description">Higher returns with increased risk</p>
+                        <div class="investment-stats">
+                            <div class="stat">
+                                <label>Min Investment</label>
+                                <span>$750</span>
+                            </div>
+                            <div class="stat">
+                                <label>Avg Return</label>
+                                <span>9.8%</span>
+                            </div>
+                            <div class="stat">
+                                <label>Risk Level</label>
+                                <span>Medium</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary-sm">Invest Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mutual Funds Tab -->
+            <div class="tab-content" id="funds">
+                <div class="investment-grid">
+                    <div class="investment-card">
+                        <div class="stock-header">
+                            <h4>Balanced Growth Fund</h4>
+                            <span class="badge positive">+7.5%</span>
+                        </div>
+                        <p class="description">Mix of stocks and bonds for balanced returns</p>
+                        <div class="investment-stats">
+                            <div class="stat">
+                                <label>Min Investment</label>
+                                <span>$100</span>
+                            </div>
+                            <div class="stat">
+                                <label>Avg Return</label>
+                                <span>7.5%</span>
+                            </div>
+                            <div class="stat">
+                                <label>Risk Level</label>
+                                <span>Medium</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary-sm">Invest Now</button>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="stock-header">
+                            <h4>Dividend Income Fund</h4>
+                            <span class="badge positive">+5.8%</span>
+                        </div>
+                        <p class="description">Focus on dividend-paying stocks</p>
+                        <div class="investment-stats">
+                            <div class="stat">
+                                <label>Min Investment</label>
+                                <span>$200</span>
+                            </div>
+                            <div class="stat">
+                                <label>Avg Return</label>
+                                <span>5.8%</span>
+                            </div>
+                            <div class="stat">
+                                <label>Risk Level</label>
+                                <span>Low-Medium</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary-sm">Invest Now</button>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="stock-header">
+                            <h4>Aggressive Growth Fund</h4>
+                            <span class="badge positive">+22.3%</span>
+                        </div>
+                        <p class="description">Maximum growth potential for long-term investors</p>
+                        <div class="investment-stats">
+                            <div class="stat">
+                                <label>Min Investment</label>
+                                <span>$150</span>
+                            </div>
+                            <div class="stat">
+                                <label>Avg Return</label>
+                                <span>22.3%</span>
+                            </div>
+                            <div class="stat">
+                                <label>Risk Level</label>
+                                <span>High</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary-sm">Invest Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crypto Tab -->
+            <div class="tab-content" id="crypto">
+                <div class="investment-grid">
+                    <div class="investment-card">
+                        <div class="stock-header">
+                            <h4>Bitcoin Fund</h4>
+                            <span class="badge positive">+45.2%</span>
+                        </div>
+                        <p class="description">Direct exposure to Bitcoin</p>
+                        <div class="investment-stats">
+                            <div class="stat">
+                                <label>Min Investment</label>
+                                <span>$50</span>
+                            </div>
+                            <div class="stat">
+                                <label>Avg Return</label>
+                                <span>45.2%</span>
+                            </div>
+                            <div class="stat">
+                                <label>Risk Level</label>
+                                <span>Very High</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary-sm">Invest Now</button>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="stock-header">
+                            <h4>Crypto Diversified</h4>
+                            <span class="badge positive">+32.1%</span>
+                        </div>
+                        <p class="description">Portfolio of major cryptocurrencies</p>
+                        <div class="investment-stats">
+                            <div class="stat">
+                                <label>Min Investment</label>
+                                <span>$75</span>
+                            </div>
+                            <div class="stat">
+                                <label>Avg Return</label>
+                                <span>32.1%</span>
+                            </div>
+                            <div class="stat">
+                                <label>Risk Level</label>
+                                <span>Very High</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary-sm">Invest Now</button>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="stock-header">
+                            <h4>DeFi Opportunities</h4>
+                            <span class="badge positive">+58.7%</span>
+                        </div>
+                        <p class="description">Decentralized finance platforms</p>
+                        <div class="investment-stats">
+                            <div class="stat">
+                                <label>Min Investment</label>
+                                <span>$100</span>
+                            </div>
+                            <div class="stat">
+                                <label>Avg Return</label>
+                                <span>58.7%</span>
+                            </div>
+                            <div class="stat">
+                                <label>Risk Level</label>
+                                <span>Extreme</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary-sm">Invest Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Why Choose FinFlow?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Bank-Level Security</h3>
+                    <p>Military-grade encryption and fraud detection</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile First</h3>
+                    <p>Optimized for all devices with offline mode</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated customer service team always ready</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Track spending and investments in real-time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-box">
+                <h3>2.5M+</h3>
+                <p>Active Users</p>
+            </div>
+            <div class="stat-box">
+                <h3>$500M+</h3>
+                <p>Transactions Processed</p>
+            </div>
+            <div class="stat-box">
+                <h3>150+</h3>
+                <p>Countries Supported</p>
+            </div>
+            <div class="stat-box">
+                <h3>99.9%</h3>
+                <p>Uptime Guarantee</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Ready to Take Control of Your Finances?</h2>
+            <p>Join millions of users who trust FinFlow for their financial needs</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary">Download App</button>
+                <button class="btn btn-secondary">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>FinFlow</h4>
+                    <p>Your complete digital financial platform</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Money Transfer</a></li>
+                        <li><a href="#">Bill Payments</a></li>
+                        <li><a href="#">Savings</a></li>
+                        <li><a href="#">Investments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FinFlow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
